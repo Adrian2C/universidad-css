@@ -1,0 +1,39 @@
+h1{
+    text-align:center;
+    color:#457b9d;
+}
+div.contenedor{
+    width:80%;
+    height:20%;
+    overflow:auto;
+    margin:auto;
+    border:3px dashed #a8dadc;
+}
+/*si queremos que una parte ocupe mas espacio hay ue darle span, (aun que este es tipo inline, y este no se le puede dar margen y padding*/
+/*la propiedad inline-block se le puede modificar margin, padding, height y */
+span{
+    font-weight: bold;
+    font-style:italic;
+    font-size:larger;
+    background-color: #a8dadc;
+    border:1px solid #457b9d;
+    height:50px;
+    padding:5px;
+    display:inline-block;
+}
+.menu{
+    list-style-type: none;
+    text-align:center;
+}
+
+.menu li{
+    display:inline-block;/*para darle las diferentes propiedades tanto de inline como de elementos en bloque*/
+    padding:15px;
+    margin:20px;
+    background-color: #e63946;
+    border-radius: 5px;
+}
+a{
+    text-decoration: none;
+    color:#f1faee;
+}

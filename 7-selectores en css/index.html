@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores combinados en CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Selectores combinados en css</h1>
+    <div class="contenedor descendiente">
+        selectores descendientes ( en cualquier nivel interno):
+        <p>primer renglon</p>
+        <p>segundo renglon</p>
+        <section>
+            <p>tercer renglon</p>
+        </section>
+    </div>
+    <div class="contenedor hijo">
+        selectores Hijo( o conocido como Child):
+        <p>primer renglon</p><!--hijo directo de div-->
+        <p>segundo renglon</p><!--hijo directo de div-->
+        <section>
+            <p>tercer renglon</p><!--hijo directo de section-->
+        </section>
+        <div>
+            <p>cuarto renglon</p><!--hijo directo de div pero sin clase-->
+        </div>
+    </div>
+    <div class="contenedor adyacente">
+        Selector Adyacente:
+        <p>Primer parrafo</p>
+    </div>
+    <p>Segundo renglon</p><!--Elemento adyacente de div-->
+    <p>Tercer Renglon</p>
+
+    <div class="contenedor hermano">
+        Selector Hermano:
+        <p>Primer parrafo</p>
+    </div>
+    <p>Segundo renglon</p><!--Elemento adyacente de div-->
+    <p>Tercer Renglon</p>
+
+    <h2>PSEUDO CLASES EN CSS</h2>
+    <div class="contenedor5 oculto">
+        Pasa por ensima
+        <p>Se muestra el parrafo</p>
+    </div>
+    <div class="contenedor5 primero">
+        <p>primero parrafo</p>
+        <p>Segundo parrafo</p>
+    </div>
+    <hr>
+    <hr>
+    <div class="contenedor6">
+        <p>selecciona el texto</p>
+    </div>
+    <p>selecciona el texto</p>
+    <div class="contenedor7">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis non labore cupiditate sequi accusamus reiciendis nesciunt laboriosam eos expedita dignissimos fugiat, eligendi esse veniam tenetur aspernatur, cumque culpa cum quidem!Lorem
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti error eaque neque rerum id, quas obcaecati fugiat similique nulla recusandae, numquam dignissimos consequuntur cum ut voluptatibus odio nihil? Repellat, nesciunt?
+        </p>
+    </div>
+    <hr><hr>
+    <h3>Transparencia en css</h3>
+    <div class="contenedor8">
+        <div class="cabecero">
+            <img src="http://globalmentoring.com.mx/imagenes/html5.png" alt="logo html">
+        </div> 
+        <div class="cuerpo">
+            <p>pasa por ensima de la imagen:</p>
+        </div> 
+    </div>
+</body>
+</html>

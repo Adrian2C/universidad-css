@@ -1,0 +1,31 @@
+h1{
+    text-align: center;
+    color:crimson;
+}
+div.contenedor{
+    border:3px dashed greenyellow;
+    width:30%;
+    height: 100px;
+    /*margin:auto;
+    overflow:visible;
+    overflow:hidden;
+    overflow:scroll;*/
+    overflow:auto;
+
+}
+div.contenedor.flotado{
+    float:left;
+}
+div.contenedor.flotado.contenedor1{
+    border:3px dashed greenyellow;
+}
+div.contenedor.flotado.contenedor2{
+    border:3px  dashed cornflowerblue;
+    float:right;
+}
+    /*para que se puedan cargar nuevos elementos y no queden en el espacio sobrante entre elementos float, se usa Clearfix*/
+div.contenedor.contenedor3{
+    clear:both;/*righ, left, both, dependiendo donde tengamos elementos flotados*/
+    border:3px dashed darkorange;
+    margin:auto;
+}

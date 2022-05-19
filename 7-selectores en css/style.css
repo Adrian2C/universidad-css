@@ -1,0 +1,127 @@
+h1{
+    text-align:center;
+    color:#e63946;
+}
+div.contenedor{
+    width:80%;
+    height:20%;
+    margin:auto;
+    border:3px solid #a8dadc;
+    color:#457b9d;
+}
+div.contenedor.descendiente p{/*para este selector se deja solo un espacio*/
+
+    /*para los parrafos que tengan la clase descendiente y esten dentro de un contenedor de un div*/
+    /*esto se aplica a todos los Parrafos ya sea directos o que este dentro de otro subnivel en la misma categoria completa seleccionada*/
+    background-color: #fdffb6;
+}
+div.contenedor.hijo > p{ /*para este selector se usa el simbolo > */
+    
+    /*se seleccionan solo los hijos directos*/
+    background-color:#ffc6ff;
+}
+div.contenedor.adyacente + p{ /*para este selector se usa el simbolo + */
+    
+    /*esto hace referencia a hacer efecto en el elemento adyacente o siguiente, no que sea hijo sino que este al mismo nivel de selecto*/
+    background-color: #caffbf;
+}
+
+div.contenedor.hermano ~ p{/*para selector hermano se pone barra ondulada alt+186 */
+    
+    /*esto seleccionara a todos los parrafos que continuan al div contenedor con la clase hermano y que esten al mismo nivel que este (no hijos)*/
+    background-color: #589eee;
+}
+/**----------HOVER, DISPLAY:NONE; FONT VARIANT--------------**/
+
+div.contenedor5{
+    width:30%;
+    height:20%;
+    margin:auto;
+    border:3px solid #a8dadc;
+    padding:15px;
+    color:#457b9d;
+    text-align: center;
+}
+div.contenedor5:hover{
+    background-color: #457b9d;
+    color:#f1faee;
+}
+div.contenedor5.oculto p{
+    display:none;
+}
+div.contenedor5.oculto:hover p{
+    display:block;
+    background-color: #a8dadc;
+    color:#023e8a;
+    padding: 8px;
+}
+div.contenedor5.primero p:first-child{
+    font-variant:small-caps;
+}
+/*----------seleccion con mouse texto----------------------------*/
+div.contenedor6{
+    width:30%;
+    height:20%;
+    margin:auto;
+    border:3px solid #a8dadc;
+    padding:15px;
+    color:#457b9d;
+    text-align: center;
+}
+div.contenedor6 p::selection{ /*un punto para pseudo clases*/
+                              /*dos puntos para pseudo elementos*/
+    color:red;
+    background-color: yellow;
+}
+div.contenedor7 p::first-line{
+    font-variant:small-caps;
+    color:red;
+}
+div.contenedor7 p::first-letter{
+    color:green;
+    font-size: 1.5em;
+}
+/*--------agregaar guion medio antes y al final de cada elemento--------*/
+div.contenedor7 p::before{
+    content:"-CONTENIDO ANEXADO-";
+    color:pink;
+}
+div.contenedor7 p::after{
+    content:"-----CONTENIDO FINAL-------";
+    color:purple;
+    /*content: url(https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen.jpg);*/
+}
+
+/*----------Transparencia---------------*/
+h3{
+    text-align:center;
+    text-shadow:2px 2px 5px green; /*ejex ejey opacidad color*/
+    color:#e63946;
+}
+div.contenedor8{
+    width:30%;
+    height:20%;
+    margin:auto;
+    border:3px solid #a8dadc;
+    padding:15px;
+    box-shadow:2px 2px 2px 5px green;/*ejex ejey blur spread(valor general del tamaño)  color*/
+    text-align: center;
+    color:#457b9d;
+    border-radius:15px;
+}
+
+img{
+    opacity:0.5;
+}
+img:hover{
+    opacity:1.0;
+}
+div.cabecero{
+    background-color:#4cc9f0;
+}
+div.cuerpo{
+    padding-top:2px;
+    font-size:1.2em;
+    font-weight: bolder;
+    text-shadow:2px 2px 2px rgb(177,177,177);
+}

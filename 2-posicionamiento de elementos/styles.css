@@ -1,0 +1,53 @@
+
+h1{
+    text-align: center;
+    color:crimson;
+}
+.elemento{
+    /*position:static;/**posicionamiento por defecto, pero no deja modificar posicion con top,left,right y bottom*/
+    /*************************/
+    position:relative;
+    top:100px;/*aca le damos que se pueda mover con relative, y luego en que posicion se va a poner*/
+    left:50px;
+    /*si se mueve, el espacio que deberia ocupar queda vacio*/
+    /***************************/
+    max-width:300px;/*si se le pone max-width, se le da un tamaño maximo que puede ocupar en la pantalla*/
+    border:3px solid firebrick;
+    margin:auto;/*centra el elemento de izq y der*/
+    background-color:rgb(132, 35, 180, .7);
+}
+.elemento1{
+    border:2px solid coral;
+    background-color: darkgray;
+}
+.fixed{
+    background-color: rgba(11, 192, 247, 0.267);
+    border:2px solid green;
+    position:fixed;/*los elementos que le siguen pueden ocupar el espacio que ocuparia en el html*/
+    bottom:30px;
+    right:20px;   
+}
+div.padre{
+    position:relative;/*el elemento padre para el aboslute no debe ser static*/
+    width:300px;
+    height: 200px;
+    top:10px;
+    left:100px;
+    border:3px solid saddlebrown;
+    text-decoration: underline;
+}
+div.absoluto{
+    position:absolute;/*se posiciona de manera absoluta sobre el elmeneto padre (div dentro de div, o si no hay, va al siguiente que sera el body*/
+    bottom:10px;
+    right:5px;
+    border:3px dotted firebrick;
+}
+div.sticky{
+    position:sticky;
+    /*este no funciona en explorer
+
+    position -webkit:sticky; para que fucione en safari
+    */
+    top:0px;
+    /*es normal hasta que se va del area visible y pasa a ser fixed, copado para barra de nav */
+}

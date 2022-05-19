@@ -1,0 +1,48 @@
+/*Propiedades en Flexbox*/
+h1{
+    text-align:center;
+    text-shadow:2px 2px 2px #a8dadc;
+    color:#e63046;
+}
+div.contenedor{
+    display:flex;/*al conotenedor se le brinda la propiedad flex*/
+    background-color: #560bad;
+    /*flex-direction:column-reverse;*/
+    /*flex-direction:row;
+    flex-wrap:wrap; *//*con este, los elementos que exceden el contenedor pasan abajo*/
+    flex-flow:row wrap;/*Shorthand de direction / wrap */
+    justify-content: space-evenly;
+    height:300px;
+    align-items:baseline;
+    align-content:center;
+}
+div.contenedor > p{
+    background-color:#4895ef;
+    color:#f1faee;
+    margin:20px;
+    padding:15px;
+    font-size:1.5em;
+}
+
+/*
+para dar propiedad flex al elemento hay que ponerle display:flex al contenedor
+Para darle direccion se usa Flex-Direction , 
+se ´puede usar Column y Row
+
+Cuando el contenido se va del contenedor, hay que usar el Flex-wrap: (wrap para que se agrande el contenedor y continue abajo)(nowrap para que on aparesca  el excedente)
+
+si queremos que el contenido se mueva en EJE-X  se usa Justify-Content: center, end, start
+
+Para el EJE-Y se usa Align-items:flex-start, evely, center, end, between;... pero el valor por defecto de este item es Align-items:streth;
+si los elementos flex tienen tamaños diferentes se usa Align-items:baseline; y hace que la linea superior sea el inicio de todos los elementos, en cambio align:center; hace que la linea en la qe se base sea la mitad de todos los elementos.
+
+con  align-content: se alinea en el eje Y, si hay varias lineas en el contenedor
+
+para modificar el orden de las cosas, se puede usar order:1(o el numero q sea, el valor por defecto es: 0)
+
+tambien se puede elegir q un elemento ocupe mas espacio que otro
+con flex-grow:1 o el numero que sea,  haciendo que si el contenedor es grande, ocupe mas espacioo
+
+Con Flex-basis:200px; es el tamaño inicial que le damos a un objeto
+
+para indicar de manera individual como se debe acomodar de manera vertical cada elemento, se aplica, align-self:center; asi de manera independiente se alinea de forma vertical un objeto.
